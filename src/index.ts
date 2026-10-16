@@ -1,0 +1,12 @@
+export type { TextRange } from "./textRange.js";
+export type { CreateRangeAnchorOptions, RangeAnchor, TextPositionSelector, TextQuoteSelector } from "./rangeAnchor.js";
+export { createRangeAnchor } from "./rangeAnchor.js";
+export type { FindRangeAnchorResult, FoundRangeAnchorResult, NotFoundRangeAnchorResult, RangeAnchorCandidate } from "./resolution.js";
+export { findRangeAnchor } from "./resolution.js";
+export { refreshRangeAnchor } from "./refresh.js";
+export type { TextChange } from "./textChange.js";
+export { diffTextChange } from "./textChange.js";
+export type { UpdateRangeAnchorResult, UpdateRangeAnchorStatus } from "./trackedRange.js";
+export { updateRangeAnchors } from "./trackedRange.js";
+export { domRangeToOffsets, getDomText, offsetsToDomRange } from "./domTextIndex.js";
+export { createDomRangeAnchor, findDomRangeAnchor } from "./domAdapters.js";

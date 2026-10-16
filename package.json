@@ -1,0 +1,45 @@
+{
+  "name": "@anderjason/textrange",
+  "version": "0.1.0",
+  "description": "Create, find, refresh, and update durable text range anchors.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Anderjason",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anderjason/textrange.git"
+  },
+  "homepage": "https://github.com/anderjason/textrange#readme",
+  "keywords": [
+    "text-range",
+    "text-anchors",
+    "web-annotations",
+    "dom-range"
+  ],
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "pack:check": "npm pack --dry-run"
+  },
+  "devDependencies": {
+    "jsdom": "30.1.3",
+    "typescript": "7.0.2",
+    "vitest": "5.0.5"
+  }
+}
